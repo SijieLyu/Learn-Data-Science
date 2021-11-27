@@ -1,3 +1,4 @@
+Resource From: https://www.sqltutorial.org/sql-cheat-sheet/
 
 ![SQL-Cheet-Sheet-1](https://user-images.githubusercontent.com/26641318/143662089-fe8f6fda-547a-41c5-8103-b7d858927f3a.png)
 

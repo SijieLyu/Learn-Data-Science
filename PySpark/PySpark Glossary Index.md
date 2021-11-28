@@ -4,16 +4,16 @@
 
 **Method Name, Parameters**  | **Method Type** | **Description** | **Sample Code**
 ------------- | ------------| ------------|-------------|
-|parallelize(x, numSlices = None)  | N/A | Distribute a local Python collection to form an RDD. [doc](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.SparkContext.parallelize.html) | 06 |
-|textfile(name, minPartitions = None)  | N/A| Read a text file from a local file system and return it as an RDD of Strings.  [doc](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.SparkContext.textFile.html)|06|
+|parallelize(x, numSlices = None)  | N/A | Distribute a local Python collection to form an RDD. [doc](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.SparkContext.parallelize.html) | [06](https://github.com/SijieLyu/Data-Science-Cheat-Sheets/blob/main/PySpark/PySpark%201%20-%20RDD/06%20-%20Introduction%20to%20RDDs.ipynb) |
+|textfile(name, minPartitions = None)  | N/A| Read a text file from a local file system and return it as an RDD of Strings.  [doc](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.SparkContext.textFile.html)|[06](https://github.com/SijieLyu/Data-Science-Cheat-Sheets/blob/main/PySpark/PySpark%201%20-%20RDD/06%20-%20Introduction%20to%20RDDs.ipynb)|
 <br>
 
 ## RDD Methods 
 
 **Method Name, Parameters**  | **Method Type** | **Description** | **Sample Code**
 ------------- | ------------| ------------|-------------|
-|collect() | action | Returns a list that contains all of the elements in this RDD.  | 06|
-|count()| action| Returns the number of elements in this RDD. |06
+|collect() | action | Returns a list that contains all of the elements in this RDD.  | [06](https://github.com/SijieLyu/Data-Science-Cheat-Sheets/blob/main/PySpark/PySpark%201%20-%20RDD/06%20-%20Introduction%20to%20RDDs.ipynb)|
+|count()| action| Returns the number of elements in this RDD. |[06](https://github.com/SijieLyu/Data-Science-Cheat-Sheets/blob/main/PySpark/PySpark%201%20-%20RDD/06%20-%20Introduction%20to%20RDDs.ipynb)|
 |countByKey()|action|Count the number of elements for each key, and return the result to the master as a dictionary.|11
 |distinct(numPartitions=None)|transformation|Returns and RDD of distinct elements from the orginal RDD.|07
 |filter(f)|transformation|Return a new RDD containing only the elements that satisfy a condition represented by f.  [doc](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.RDD.filter)|09
@@ -22,20 +22,20 @@
 |glom()|transformation|Returns an RDD containing lists, with each list representing a partition of the original RDD. [doc](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.RDD.glom)|07
 |map(f)|transformation|Return a new RDD by applying a function to each element of the original RDD. [doc](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.RDD.map)|08
 |mapValues(f)|transformation|Pass each value in the key-value pair RDD through a map function without changing the keys.  [doc](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.RDD.mapValues)|11
-|max(key=None)|action|Find the maximum item in this RDD.  [doc](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.RDD.max.html)|06
-|mean()|action|Compute the mean of this RDD’s elements.  [doc](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.RDD.mean.html)|06
-|min(key=None)|action|Find the minimum item in this RDD.  [doc](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.RDD.min.html)|06
+|max(key=None)|action|Find the maximum item in this RDD.  [doc](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.RDD.max.html)|[06](https://github.com/SijieLyu/Data-Science-Cheat-Sheets/blob/main/PySpark/PySpark%201%20-%20RDD/06%20-%20Introduction%20to%20RDDs.ipynb)
+|mean()|action|Compute the mean of this RDD’s elements.  [doc](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.RDD.mean.html)|[06](https://github.com/SijieLyu/Data-Science-Cheat-Sheets/blob/main/PySpark/PySpark%201%20-%20RDD/06%20-%20Introduction%20to%20RDDs.ipynb)
+|min(key=None)|action|Find the minimum item in this RDD.  [doc](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.RDD.min.html)|[06](https://github.com/SijieLyu/Data-Science-Cheat-Sheets/blob/main/PySpark/PySpark%201%20-%20RDD/06%20-%20Introduction%20to%20RDDs.ipynb)
 |persist(f)|N/A|Set this RDD’s storage level to persist its values across operations after the first time it is computed.  [doc](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.RDD.persist)|10
 |reduce(f)|action|Reduces the elements of the RDD using the specified commutative and associative binary operator. [doc](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.RDD.reduce)|09
 |reduceByKey(func)|transformation|Merge the values for each key using an associative and commutative reduce function.  [doc](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.RDD.reduceByKey)|11
 |sample(withReplacement, fraction, seed=None)|transformation|Returns an RDD of elements randomly selected from the original RDD. The expected size of the sample is equal to fraction times the size of the RDD being sampled from. [doc](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.RDD.sample)|07
 |sortBy(ascending=True, keyfunc=f)|transformation|Sorts this RDD by the given keyfunc.  [doc](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.RDD.sortBy.html)|09
-|stats()|action|Generates a report stating the count, mean, standard deviation, max and min of the RDD elements.  [doc](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.RDD.stats.html)|06
-|stdev()|action|Compute the standard deviation of this RDD’s elements.  [doc](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.RDD.stdev.html)|06
+|stats()|action|Generates a report stating the count, mean, standard deviation, max and min of the RDD elements.  [doc](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.RDD.stats.html)|[06](https://github.com/SijieLyu/Data-Science-Cheat-Sheets/blob/main/PySpark/PySpark%201%20-%20RDD/06%20-%20Introduction%20to%20RDDs.ipynb)
+|stdev()|action|Compute the standard deviation of this RDD’s elements.  [doc](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.RDD.stdev.html)|[06](https://github.com/SijieLyu/Data-Science-Cheat-Sheets/blob/main/PySpark/PySpark%201%20-%20RDD/06%20-%20Introduction%20to%20RDDs.ipynb)
 |sum()|action|Add up the elements in this RDD.  [doc](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.RDD.sum.html)|06
 |take(num)|action|Returns a list containing the first num elements of the RDD.  [doc](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.RDD.take)|07
 |unpersist(f)|N/A|Mark the RDD as non-persistent, and remove all blocks for it from memory and disk.  [doc](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.RDD.unpersist)|10
-|variance()|action|Compute the variance of this RDD’s elements.  [doc](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.RDD.variance.html)|06
+|variance()|action|Compute the variance of this RDD’s elements.  [doc](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.RDD.variance.html)|[06](https://github.com/SijieLyu/Data-Science-Cheat-Sheets/blob/main/PySpark/PySpark%201%20-%20RDD/06%20-%20Introduction%20to%20RDDs.ipynb)
 <br>
 <br>
 

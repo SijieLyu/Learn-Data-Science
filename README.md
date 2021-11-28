@@ -1,7 +1,7 @@
 # Data Science Cheat Sheets
 This project is intend to provide a comprehensive set of cheat sheets for data science projects. So far, I am adding 
 
-- [PySpark for Big Data](https://github.com/SijieLyu/Data-Science-Cheat-Sheets/blob/main/PySpark/PySpark%20Glossary%20Index.md)
+- [PySpark for Big Data](https://github.com/SijieLyu/Data-Science-Cheat-Sheets/tree/main/PySpark)
 
 <br>
 The project to be added: <br>

@@ -1,8 +1,8 @@
-# Data Science Cheat Sheets
-This project is intend to provide a comprehensive set of cheat sheets for data science projects. So far, I am adding 
+# Learn Data Science
+This project is intend to provide a comprehensive set of cheat sheets, tips and tricks, scripts, etc... for data science. So far, I am adding 
 
 - [PySpark for Big Data](https://github.com/SijieLyu/Data-Science-Cheat-Sheets/tree/main/PySpark)
-- Natural Language Processing (Regex, SpaCy, etc.)()
+- Natural Language Processing (Regex, SpaCy, etc.)(Under construction)
 
 <br>
 The project to be added: <br>
